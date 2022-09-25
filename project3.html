@@ -1,0 +1,16 @@
+<html>
+<head>
+<script type="text/javascript">
+function describe_image()
+{
+	image=document.getElementById('img');
+	alert("The image file used is JPG which means Joint Photographic Experts Group.\nThe image width is "+image.clientWidth+"\nThe image height is "+image.clientHeight);
+	document.getElementById("txt").innerHTML=("The image file used is <b>JPG</b> which means Joint Photographic Experts Group.<br>The image width is <b>"+image.clientWidth+"</b><br>The image height is <b>"+image.clientHeight+"</b>")
+}
+</script>
+</head>
+<body>
+<img src="image\image.jpg" id="img" onload="describe_image()">
+<p id="txt" style="font-size: 30px"></p>
+</body>
+</html>

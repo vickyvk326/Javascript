@@ -1,0 +1,37 @@
+<html>
+<head>
+</head>
+<body style="font-size: 30px">
+<script type="text/javascript">
+	//check exam_result
+	var exam_result=89;
+	/* To get user input
+	var exam_result=Number(prompt("Enter the marks: ")); */
+	if (exam_result>=90) 
+	{
+		alert('Excellent. Pass with Distinction.')
+		document.write('Excellent. Pass with Distinction.')
+	}
+	else if (exam_result>=70 && exam_result<=89)
+	{
+		alert('Well done. Pass with Honours.')
+		document.write('Well done. Pass with Honours.')
+	}
+	else if (exam_result>=55 && exam_result<=69)
+	{
+		alert('Just passed.')
+		document.write('Just passed.')
+	}
+	else if(exam_result<=54 && exam_result>=0)
+	{
+		alert('Failed. Do better next time.')
+		document.write('Failed. Do better next time.')
+	}
+	else
+	{
+		alert('Invalid input.')
+		document.write('Invalid input.')
+	}
+</script>
+</body>
+</html>

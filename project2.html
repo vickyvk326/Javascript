@@ -1,0 +1,19 @@
+<html>
+<head>
+</head>
+<body style="font-size: 30px">
+<script type="text/javascript">
+	let regexp=new RegExp("[a-z A-Z 0-9_.]+\@[a-z]+\.[a-z]");
+	var check_string= String(prompt('Enter the string: '))
+	if(regexp.test(check_string))
+	{
+		document.writeln('\"That\'s an email address\"')
+	}
+	else
+	{
+		document.writeln('\"That doesn\'t look like an email address to me!\"'+'<br>');
+		document.write("you entered: "+check_string+"<br>click here to re-enter:<button onclick=\"location.reload()\">click</button>");
+	}
+</script>
+</body>
+</html>
